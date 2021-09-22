@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<button onclick="doAction()">Input text field</button><br><br>
+
+		<script>
+			var n = 6;
+			function doAction(){
+
+				var textResult = [];
+
+				for(var i = 0; i < n; i++){
+					var text = prompt("Input text field");
+					textResult.push(text);
+				}
+				document.write(textResult.join(''));
+			}
+		</script>
+	</body>
+</html>

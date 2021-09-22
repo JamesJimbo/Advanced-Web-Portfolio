@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<button onclick="doAction()">Input text field</button><br><br>
+
+		<button onclick="addSeventh()">Add 7th text field</button>
+
+		<script>
+			var n = 6;
+			function doAction(){
+
+				var textResult = [];
+
+				for(var i = 0; i < n; i++){
+					var text = prompt("Input text field");
+					textResult.push(text);
+				}
+				document.write(textResult.join(''));
+			}
+
+			function addSeventh(){
+				if(n < 7){
+					n++;
+					return n;
+				}
+			}
+		</script>
+	</body>
+</html>

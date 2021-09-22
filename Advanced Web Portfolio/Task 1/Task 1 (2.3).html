@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<b>Input number:</b>
+
+		<input type="number" id = "amount" min="1">
+		<button onclick="doAction()">Click</button>
+
+		<script>
+			function doAction(){
+				var n = document.getElementById("amount").value;
+
+				var totalInput = 0;
+				var large = 0;
+
+				for(var i = 0; i < n; i++){
+					var input = parseInt(prompt("Input number"));
+					totalInput += input;
+
+					highInput = input;
+
+					if (highInput > large){
+						large = highInput;
+					}
+				}
+				alert(totalInput);
+				alert(large);
+			}
+		</script>
+	</body>
+</html>
